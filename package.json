@@ -1,0 +1,13 @@
+{
+  "name": "dev-showcase",
+  "version": "1.0.0",
+  "description": "Personal developer showcase and resume website",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Static site - no build needed'",
+    "start": "echo 'Static site ready'"
+  },
+  "keywords": ["portfolio", "resume", "developer", "showcase"],
+  "author": "Your Name",
+  "license": "MIT"
+}
