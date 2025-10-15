@@ -5,7 +5,9 @@
   "main": "index.html",
   "scripts": {
     "build": "if not exist build mkdir build && copy *.html build\\ && copy *.css build\\ && copy *.js build\\",
-    "start": "echo Static site ready"
+    "start": "echo Static site ready",
+    "preview": "python -m http.server 3000",
+    "preview-alt": "npx serve . -p 3000"
   },
   "keywords": ["portfolio", "resume", "developer", "showcase"],
   "author": "Your Name",

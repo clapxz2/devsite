@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Developer</title>
+    <title>Your Name - Minecraft Server Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
@@ -26,8 +26,8 @@
         <section id="hero">
             <div class="hero-content">
                 <h1 class="hero-title">Hi, I'm <span class="highlight">Your Name</span></h1>
-                <h2 class="hero-subtitle">Full Stack Developer</h2>
-                <p class="hero-description">Passionate about creating beautiful, functional, and user-friendly web applications that make a difference.</p>
+                <h2 class="hero-subtitle">Minecraft Server Developer</h2>
+                <p class="hero-description">Specializing in Skript development, creating amazing Minecraft server experiences with custom plugins, gamemodes, and interactive features.</p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
                     <a href="#contact" class="btn btn-secondary">Get In Touch</a>
@@ -36,43 +36,93 @@
             <div class="hero-image">
                 <div class="code-snippet">
                     <div class="code-line">
-                        <span class="code-keyword">const</span> 
-                        <span class="code-variable">developer</span> = {
+                        <span class="code-comment"># Minecraft Server Developer</span>
+                    </div>
+                    <div class="code-line">
+                        <span class="code-keyword">on</span> <span class="code-string">player join</span>:
                     </div>
                     <div class="code-line indent">
-                        <span class="code-property">name</span>: <span class="code-string">"Your Name"</span>,
+                        <span class="code-keyword">send</span> <span class="code-string">"&aWelcome to the server!"</span> <span class="code-keyword">to</span> <span class="code-variable">player</span>
                     </div>
                     <div class="code-line indent">
-                        <span class="code-property">skills</span>: [<span class="code-string">"JavaScript"</span>, <span class="code-string">"React"</span>, <span class="code-string">"Node.js"</span>],
+                        <span class="code-keyword">give</span> <span class="code-string">diamond_sword</span> <span class="code-keyword">to</span> <span class="code-variable">player</span>
                     </div>
                     <div class="code-line indent">
-                        <span class="code-property">passion</span>: <span class="code-string">"Building amazing things"</span>
+                        <span class="code-keyword">set</span> <span class="code-variable">player</span><span class="code-string">'s gamemode</span> <span class="code-keyword">to</span> <span class="code-string">survival</span>
                     </div>
-                    <div class="code-line">};</div>
+                    <div class="code-line">
+                        <span class="code-comment"># Creating amazing experiences!</span>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="about">
             <h2>About Me</h2>
-            <p>Passionate developer with experience in modern web technologies.</p>
+            <p>Passionate Minecraft server developer with extensive experience in Skript, creating custom gamemodes, plugins, and interactive server features. I specialize in building engaging player experiences that keep communities active and entertained.</p>
         </section>
 
         <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML/CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node.js</li>
-            </ul>
+            <h2>Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Minecraft Development</h3>
+                    <ul>
+                        <li>Skript Scripting</li>
+                        <li>Custom Gamemodes</li>
+                        <li>Plugin Development</li>
+                        <li>Server Configuration</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Server Management</h3>
+                    <ul>
+                        <li>Bukkit/Spigot</li>
+                        <li>Paper Server</li>
+                        <li>Performance Optimization</li>
+                        <li>Player Management</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Additional Skills</h3>
+                    <ul>
+                        <li>MySQL Database</li>
+                        <li>Discord Bot Integration</li>
+                        <li>Web Development</li>
+                        <li>Community Management</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section id="projects">
-            <h2>Projects</h2>
+            <h2>Minecraft Projects</h2>
             <div class="project">
-                <h3>Project 1</h3>
-                <p>Description of your project</p>
+                <h3>Custom Survival Server</h3>
+                <p>Developed a unique survival experience with custom Skript features including economy systems, custom enchantments, and player progression mechanics.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Skript</span>
+                    <span class="tech-tag">Economy</span>
+                    <span class="tech-tag">MySQL</span>
+                </div>
+            </div>
+            <div class="project">
+                <h3>Minigame Hub</h3>
+                <p>Created a comprehensive minigame hub with multiple custom games, leaderboards, and reward systems to keep players engaged.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Skript</span>
+                    <span class="tech-tag">Minigames</span>
+                    <span class="tech-tag">Leaderboards</span>
+                </div>
+            </div>
+            <div class="project">
+                <h3>Discord Integration Bot</h3>
+                <p>Built a Discord bot that connects with the Minecraft server, providing player statistics, server status, and community features.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Discord Bot</span>
+                    <span class="tech-tag">API Integration</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
             </div>
         </section>
 
