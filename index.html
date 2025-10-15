@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,8 +24,33 @@
 
     <main>
         <section id="hero">
-            <h2>Full Stack Developer</h2>
-            <p>Building amazing web experiences</p>
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Your Name</span></h1>
+                <h2 class="hero-subtitle">Full Stack Developer</h2>
+                <p class="hero-description">Passionate about creating beautiful, functional, and user-friendly web applications that make a difference.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="code-snippet">
+                    <div class="code-line">
+                        <span class="code-keyword">const</span> 
+                        <span class="code-variable">developer</span> = {
+                    </div>
+                    <div class="code-line indent">
+                        <span class="code-property">name</span>: <span class="code-string">"Your Name"</span>,
+                    </div>
+                    <div class="code-line indent">
+                        <span class="code-property">skills</span>: [<span class="code-string">"JavaScript"</span>, <span class="code-string">"React"</span>, <span class="code-string">"Node.js"</span>],
+                    </div>
+                    <div class="code-line indent">
+                        <span class="code-property">passion</span>: <span class="code-string">"Building amazing things"</span>
+                    </div>
+                    <div class="code-line">};</div>
+                </div>
+            </div>
         </section>
 
         <section id="about">
