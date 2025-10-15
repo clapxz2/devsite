@@ -4,8 +4,8 @@
   "description": "Personal developer showcase and resume website",
   "main": "index.html",
   "scripts": {
-    "build": "echo 'Static site - no build needed'",
-    "start": "echo 'Static site ready'"
+    "build": "if not exist build mkdir build && copy *.html build\\ && copy *.css build\\ && copy *.js build\\",
+    "start": "echo Static site ready"
   },
   "keywords": ["portfolio", "resume", "developer", "showcase"],
   "author": "Your Name",
