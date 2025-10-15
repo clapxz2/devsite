@@ -51,19 +51,27 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Add typing effect to code snippet
-function typeCode() {
-    const codeLines = document.querySelectorAll('.code-line');
-    codeLines.forEach((line, index) => {
-        line.style.opacity = '0';
-        setTimeout(() => {
-            line.style.transition = 'opacity 0.5s ease';
-            line.style.opacity = '1';
-        }, index * 500);
+// Add counter animation to stats
+function animateCounters() {
+    const statNumbers = document.querySelectorAll('.stat-number');
+    statNumbers.forEach(stat => {
+        const target = parseInt(stat.textContent.replace(/\D/g, ''));
+        const suffix = stat.textContent.replace(/\d/g, '');
+        let current = 0;
+        const increment = target / 50;
+        const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+                stat.textContent = target + suffix;
+                clearInterval(timer);
+            } else {
+                stat.textContent = Math.floor(current) + suffix;
+            }
+        }, 30);
     });
 }
 
-// Initialize typing effect when page loads
+// Initialize counter animation when page loads
 document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(typeCode, 1000);
+    setTimeout(animateCounters, 1000);
 });

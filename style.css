@@ -5,13 +5,14 @@
 }
 
 :root {
-    --primary-color: #6366f1;
-    --secondary-color: #8b5cf6;
-    --accent-color: #06b6d4;
+    --primary-color: #dc2626;
+    --secondary-color: #ef4444;
+    --accent-color: #f87171;
     --text-dark: #1f2937;
     --text-light: #6b7280;
     --bg-light: #f9fafb;
     --bg-white: #ffffff;
+    --bg-dark: #374151;
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
 }
@@ -197,44 +198,49 @@ h2 {
     animation: slideInRight 1s ease-out;
 }
 
-.code-snippet {
-    background: #1e293b;
+.hero-stats {
+    background: var(--bg-dark);
     border-radius: 12px;
     padding: 2rem;
-    font-family: 'Fira Code', 'Courier New', monospace;
     box-shadow: var(--shadow-lg);
-    border: 1px solid #334155;
+    border: 1px solid #4b5563;
 }
 
-.code-line {
+.stat-item {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.stat-item:last-child {
+    margin-bottom: 0;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary-color);
     margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.stat-label {
     font-size: 1rem;
-    line-height: 1.6;
-}
-
-.code-line.indent {
-    margin-left: 2rem;
-}
-
-.code-keyword {
-    color: #c792ea;
-}
-
-.code-variable {
-    color: #82aaff;
-}
-
-.code-property {
-    color: #ffcb6b;
-}
-
-.code-string {
-    color: #c3e88d;
-}
-
-.code-comment {
-    color: #676e95;
-    font-style: italic;
+    color: #d1d5db;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 /* Skills Grid */
