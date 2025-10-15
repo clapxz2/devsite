@@ -4,7 +4,7 @@
   "description": "Personal developer showcase and resume website",
   "main": "index.html",
   "scripts": {
-    "build": "if not exist build mkdir build && copy *.html build\\ && copy *.css build\\ && copy *.js build\\",
+    "build": "if not exist build mkdir build && copy *.html build\\ && copy *.css build\\ && copy *.js build\\ && copy *.ico build\\",
     "start": "echo Static site ready",
     "preview": "python -m http.server 3000",
     "preview-alt": "npx serve . -p 3000"
